@@ -1,0 +1,2 @@
+[workspace]
+members = ["contains_lib", "contains_test"]
