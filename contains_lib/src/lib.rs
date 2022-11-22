@@ -1,19 +1,7 @@
-#[cfg(not(test))]
-pub fn some_function() {
-    panic!("for not test");
-}
+pub struct Foo {}
 
-#[cfg(test)]
-pub fn some_function() {
-    println!("for_tests");
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_some_function() {
-        some_function();
+impl Foo {
+    pub fn foo() {
+        println!("from Foo struct");
     }
 }
